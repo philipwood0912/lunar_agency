@@ -1,0 +1,175 @@
+@charset "utf-8";
+/*CSS document*/
+.hidden
+{
+	display: none;
+}
+
+body{
+    min-width:320px;
+}
+
+/* MOBILE STYLE RULES */
+#mainContainer{
+    min-width:320px;
+	max-width:600px;
+	margin: 0 auto;
+    background-color: grey;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	display: relative;
+}
+
+#mainHeader{
+    display:flex;
+    height:45px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#headerLogo{
+    height:45px;
+    width:45px;
+    margin-left:5px;
+    background-color:black;
+}
+
+#headerNav{
+    background:grey;
+    opacity:0.7;
+    padding-top:10px;
+    margin:0 auto;
+}
+
+#headerNav a{
+    color: orange;
+    text-decoration: none;
+    opacity:0.7;
+}
+
+#headerNav a:hover{
+    opacity:1.0;
+}
+
+#headerNav ul, li{
+    display:inline;
+    margin-right:5px;
+}
+
+#mainVideo{
+    height:210px;
+    padding-bottom:15px;
+}
+
+#aboutUs{
+    padding-bottom:15px;
+}
+
+#staffPhoto{
+    height:210px;
+    padding-bottom:10px;
+}
+
+#aboutUsCopy{
+    height:86px;
+}
+
+#promoProduct{
+    padding-bottom:5px
+}
+
+#promoImg{
+    height: 255px;
+}
+
+#promoDesc{
+    padding-bottom:15px;
+}
+
+#productCon{
+    display:block;
+}
+
+.fourProducts{
+    height:190px;
+}
+
+#contact{
+    padding-bottom: 15px;
+}
+
+#contactForm
+{
+	width: 100%;
+}
+
+/*Styles the contact form labels*/
+#contactForm label
+{
+	font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 30px;
+    display: block;
+    color: orange;
+}
+
+#contactForm label:first-of-type
+{
+	margin-top: 0;
+}
+
+/*Styles the input fields*/
+#firstName, #lastName, #email, #message
+{
+	display: block;
+	margin-top: 5px;
+	margin: 0 auto;
+	width: 90%;
+	height: 20px;
+    font-size: 16px;
+}
+
+#message
+{
+	height: 150px;
+}
+
+/*Styles and positions submit button*/
+.submit
+{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+#contactCopy{
+    height:190px;
+}
+
+#footer{
+    padding-bottom:10px;
+    margin:0 auto;
+}
+
+#footer a{
+    text-decoration:none;
+    color:orange;
+}
+
+#socialMedia{
+    height:40px;
+}
+
+#backToTop{
+    display:block;
+    margin: 0 auto;
+    height: 30px;
+}
+
+#footerNav{display:none;}
+
+#copyright{
+    height:20px;
+}
