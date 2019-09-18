@@ -4,77 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>The Lunar Agency</title>
 </head>
+
 <body>
     <div id="mainContainer">
             <h1 class="hidden">The Lunar Agency</h1>
 
             <!-- mainHeader section -->
             <header id="mainHeader">
-                <div id="headerLogo"></div>
-                <div id="headerNav"></div>
+                <div id="headerLogo">Logo
+                </div>
+
+                <nav id="headerNav">
+                        <h2 class="hidden">Main Navigation</h2>
+                        <ul>
+                            <li> <a href="#">Home</a> </li>
+                            <li> <a href="#aboutUs">About Us</a> </li>
+                            <li> <a href="#promoProduct">Portfolio</a></li>
+                            <li> <a href="#contactSection">Contact</a> </li>
+                        </ul>
+                    </nav> <!-- End headerNav -->
             </header> <!-- end mainHeader -->
             
             <!-- mainVideo section -->
             <div id="mainVideo">
+                <h2 class="hidden">About Us Video</h2>
+                main video and controls
                 <!-- video -->
                 <!-- controls -->
             </div> <!-- end mainVideo  -->
 
             <!-- aboutUs section -->
             <div id="aboutUs">
+                <h2 class="hidden">About Us Section</h2>
                 <!-- staff photo -->
-                <!-- aboutUs copy -->
+                <div id="staffPhoto"> 
+                    <h3 class="Staff Photo">Staff Photo</h3>
+                    staff photo
+                </div>
+                <div id="aboutUsCopy">
+                    <h3 class="hidden">About Us Info</h3>
+                    staff bio
+                </div>
             </div> <!-- end aboutUs  -->
 
             <!-- promoProduct section -->
             <div id="promoProduct">
+                <h2 class="hidden">Promotional Portfolio Piece</h2>
                 <!-- main promo piece -->
-
+                <div id="promoImg">main promo img /slide</div>
                 <div id="promoDesc">
                     <!-- promo product description -->
+                    promo desc
                 </div> <!-- end promoDesc -->
             </div> <!-- end promoProduct -->
 
-            <div id="fourProduct">
-                <div id="product1"> 
+            <div id="productCon">
+                <h2 class=hidden>4 Portfolio Pieces</h2>
+                <div class="fourProducts"> 
+                    product 1
                     <!-- product img -->
                     <!-- product desc -->
                 </div>
 
-                <div id="product2"> 
+                <div class="fourProducts"> 
+                    product 2
                     <!-- product img -->
                     <!-- product desc -->
                 </div>
 
-                <div id="product3"> 
+                <div class="fourProducts"> 
+                    product 3
                     <!-- product img -->
                     <!-- product desc -->
                 </div>
 
-                <div id="product4"> 
+                <div class="fourProducts"> 
+                    product 4
                     <!-- product img -->
                     <!-- product desc -->
                 </div>
-            </div> <!-- end fourProduct -->
+            </div> <!-- end productCon -->
 
             <!-- contact section -->
             <div id="contact">
-                <div id="contactForm"></div>
+                <h2 class="hidden">Contact Us Section</h2>
+                <div id="contactForm">
+                    <h3 class="hidden">Contact Form</h3>
+                    <!-- First Name -->
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" type="text" required>
+                    
+                    <!-- Last Name -->
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" type="text" required>
 
-                <div id="contactCopy"></div>
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input id="email" type="Email" required>
+
+                    <!-- Message -->
+                    <label for="message">Message:</label>
+                    <textarea id="message" cols="50" rows="14" required></textarea>
+
+                    <!-- Submit Button -->
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+
+                <div id="contactCopy">
+                    <h3 class="hidden">Contact Information</h3>
+                    contact copy
+                </div>
             </div> <!-- end contact section -->
 
             <!-- footer  -->
             <div id="footer">
-                <div id="socialMedia"></div>
-                <div id="backToTop"></div>
-                <div id="footerNav"></div>
-                <div id="copyright"></div>
+                <div id="socialMedia">social links</div>
+                <a href="#"><div id="backToTop" class="stickyButton">Back To Top</div></a>
+                <div id="footerNav">footer nav</div>
+                <div id="copyright">copyright area</div>
             </div> <!-- end footer section -->
     </div>  <!-- end mainContainer -->
-    <script type="module" src="js/main.js"></script>
 </body>
 </html>
