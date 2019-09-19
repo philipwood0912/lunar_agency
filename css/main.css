@@ -36,6 +36,7 @@
          url('../fonts/librefranklin-regular-webfont.woff') format('woff');
 }
 
+
 /*HOME PAGE Rules*/
 /*Sets default font settings*/
 img, video{
@@ -120,9 +121,9 @@ a
 
 /* NEEDS WORK NEEDS WORK NEEDS WORK hangs off the right side of mobile boundries */
 #headerNav{
-    padding-top:10px;
-    margin:0 auto;
-    width:100%;
+    display:flex;
+    flex-direction:row;
+    opacity:0.7;
 }
 
 #headerNav a{
@@ -138,6 +139,7 @@ a
 #headerNav ul, li{
     display:inline;
     margin-right:5px;
+    padding:5px;
 }
 
 /* REMOVE and replace with video! */
@@ -199,7 +201,6 @@ a
     background-color:black;
     margin-bottom:5px;
 }
-
 #contactCopy{
     height:190px;
     background-color:grey;
