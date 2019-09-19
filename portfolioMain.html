@@ -7,34 +7,38 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>The Lunar Agency - Portfolio</title>
+    <title>The Lunar Agency</title>
 </head>
 
 <body>
     <div id="mainContainer">
-            <h1 class="hidden">Full Portfolio</h1>
+            <h1 class="hidden">The Lunar Agency</h1>
 
             <!-- mainHeader section -->
             <header id="mainHeader">
-                <div id="headerLogo">Logo
+                <div id="logoMenuCon">
+                    <div id="logoCon">
+                        <img src="images/lunar_logo.svg" alt="lunarLogo">
+                    </div>
+                    <div id="menuCon">
+                        <img src="images/burger.svg" alt="burgerMenu">
+                    </div>
                 </div>
 
-                <nav id="headerNav">
+                <nav id="hamburgerNav">
                         <h2 class="hidden">Main Navigation</h2>
-                        <ul>
-                            <li> <a href="#">Home</a> </li>
-                            <li> <a href="#aboutUs">About Us</a> </li>
-                            <li> <a href="#promoProduct">Portfolio</a></li>
-                            <li> <a href="#contactSection">Contact</a> </li>
-                        </ul>
+                        <div id="burgerCon">
+                            <ul id="burgerMenu">
+                                <li> <a href="#">Home</a> </li>
+                                <li> <a href="#aboutUs">About Us</a> </li>
+                                <li> <a href="#promoProduct">Portfolio</a></li>
+                                <li> <a href="#contactSection">Contact</a> </li>
+                            </ul>
+                        </div>
                     </nav> <!-- End headerNav -->
             </header> <!-- end mainHeader -->
-
-            <div id="portfolio">
-                <div id="pieceOne" class="threePortfolio"></div>
-                <div id="pieceTwo" class="threePortfolio"></div>
-                <div id="pieceThree" class="threePortfolio"></div>
-            </div>
+            
+            <div id="portfolioCon"></div>
 
             <!-- footer  -->
             <div id="footer">
@@ -44,5 +48,7 @@
                 <div id="copyright">copyright area</div>
             </div> <!-- end footer section -->
     </div>  <!-- end mainContainer -->
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

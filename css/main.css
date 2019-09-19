@@ -334,21 +334,10 @@ a
 }
 
 
-/* FEATURE PORTFOLIO PAGE RULES */
-#feature{
-    display:flex;
-    justify-content: center;
-    height:900px;
-}
 
 
-/* PORTFOLIO PAGE RULES */
-#portfolio{
-    margin-top:75px;
-}
 
-.threePortfolio{
-    background-color:blue;
-    height:250px;
-    margin-bottom:20px;
+
+#portfolioCon{
+    margin-top:300px;
 }
