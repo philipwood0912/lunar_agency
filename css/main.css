@@ -46,7 +46,6 @@ img, video{
 
 body
 {
-	display:flex;
 	margin:0 auto;
 	font-family: 'libre_franklin-regular', Helvetica, sans-serif;
 	font-size: 14px;
@@ -101,11 +100,74 @@ a
 
 
 #mainHeader{
-    display:flex;
-	flex-direction:row;
 	position: fixed;
     background-color: #FFF;
-    padding:5px;
+    height: 115px;
+    width: 100%;
+    top: 0;
+}
+
+#logoCon {
+    width: 65px;
+}
+
+#menuCon.expanded {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#menuCon {
+    margin-top: 25px;
+}
+
+#menuCon img {
+    width: 45px;
+}
+
+#menuCon {
+    width: 25px;
+    height: 25px;
+    line-height: 35px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid #d8ae58;
+    transition: all 500ms ease;
+}
+
+#burgerCon {
+    display: none;
+    background-color: #fff;
+}
+
+#burgerCon.slideToggle {
+    display: block;
+    overflow: inherit;
+}
+
+#logoMenuCon {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0px;
+}
+
+#hamburgerNav {
+    margin: 0 auto;
+}
+
+#hamburgerNav li a {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    color: #d8ae58;
+}
+
+#hamburgerNav li {
+    border-bottom: 1px solid #d8ae58;
+}
+
+#hamburgerNav li:first-child {
+    border-top: 1px solid #d8ae58;
 }
 
 /* POSITIONS LOGO */
@@ -119,32 +181,9 @@ a
     background-color:black;
 }
 
-/* NEEDS WORK NEEDS WORK NEEDS WORK hangs off the right side of mobile boundries */
-#headerNav{
-    display:flex;
-    flex-direction:row;
-    opacity:0.7;
-}
-
-#headerNav a{
-    color: orange;
-    text-decoration: none;
-    opacity:0.7;
-}
-
-#headerNav a:hover{
-    opacity:1.0;
-}
-
-#headerNav ul, li{
-    display:inline;
-    margin-right:5px;
-    padding:5px;
-}
-
 /* REMOVE and replace with video! */
 #mainVideo{
-    margin-top:70px;
+    margin-top:110px;
     width:100%;
     height:210px;
     margin-bottom:15px;
@@ -166,7 +205,7 @@ a
 #staffBio{
     height:60px;
     background-color:grey;
-    opacity:0.5;
+    opacity:1;
 }
 
 /* styles main portfolio area */

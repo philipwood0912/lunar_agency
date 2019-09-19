@@ -16,17 +16,25 @@
 
             <!-- mainHeader section -->
             <header id="mainHeader">
-                <div id="headerLogo">Logo
+                <div id="logoMenuCon">
+                    <div id="logoCon">
+                        <img src="images/lunar_logo.svg" alt="lunarLogo">
+                    </div>
+                    <div id="menuCon">
+                        <img src="images/burger.svg" alt="burgerMenu">
+                    </div>
                 </div>
 
-                <nav id="headerNav">
+                <nav id="hamburgerNav">
                         <h2 class="hidden">Main Navigation</h2>
-                        <ul>
-                            <li> <a href="#">Home</a> </li>
-                            <li> <a href="#aboutUs">About Us</a> </li>
-                            <li> <a href="#promoProduct">Portfolio</a></li>
-                            <li> <a href="#contactSection">Contact</a> </li>
-                        </ul>
+                        <div id="burgerCon">
+                            <ul id="burgerMenu">
+                                <li> <a href="#">Home</a> </li>
+                                <li> <a href="#aboutUs">About Us</a> </li>
+                                <li> <a href="#promoProduct">Portfolio</a></li>
+                                <li> <a href="#contactSection">Contact</a> </li>
+                            </ul>
+                        </div>
                     </nav> <!-- End headerNav -->
             </header> <!-- end mainHeader -->
             
@@ -117,5 +125,6 @@
                 <div id="copyright">copyright area</div>
             </div> <!-- end footer section -->
     </div>  <!-- end mainContainer -->
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
