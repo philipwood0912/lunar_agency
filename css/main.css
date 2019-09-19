@@ -196,22 +196,85 @@ a
 #staffPhoto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 230px;
-    max-width: 500px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200px;
+    max-width: 550px;
     margin: 0 auto;
     text-align: center;
     background-image: url('../images/mobile/moonbg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #theTeam {
-    display: flex;  
+    align-items: flex-end;
+}
+@media screen and (min-width: 445px) {
+    #staffPhoto {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #staffPhoto {
+        height: 300px;
+        max-width: 800px;
+        background-image: url('../images/tablet/moonbg-tablet.jpg');
+    }
+    #theTeam {
+        height: 80%;
+    }
+    #name {
+        font-size: 30px;
+    }
+    #role {
+        font-size: 25px;
+    }
+    #bioRole {
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #staffPhoto {
+        height: 450px;
+        max-width: 1000px;
+        background-image: url('../images/desktop/moonbg-desktop.jpg');
+        justify-content: flex-end;
+    }
+    .photos {
+        width: 100%;
+    }
+    #photoBy {
+        content: url('../images/tablet/brisk_tablet.png');
+    }
+    #photoPw {
+        content: url('../images/tablet/phil_tablet.png');
+    }
+    #photoMp {
+        content: url('../images/tablet/mike_tablet.png');
+    }
+    #photoSo {
+        content: url('../images/tablet/scott_tablet.png')
+    }
+    #bio {
+        padding: 0px 50px;
+    }
+}
+
+#theTeam {
+    display: flex;
 }
 
 #butHold {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #000000;
+    padding: 5px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .arrow {
@@ -237,11 +300,14 @@ a
 /* REMOVE for responsive Bios */
 #bioRole {
     background-color: #000000;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0px 30px;
 }
 
 #role {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -249,7 +315,6 @@ a
     color: #fff;
     padding: 10px 15px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 /* styles main portfolio area */
