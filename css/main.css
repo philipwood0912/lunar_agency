@@ -5,7 +5,6 @@
 	display: none;
 }
 
-
 /*Fontface settings*/
 @font-face {
     font-family: 'libre_franklin-medium';
@@ -37,7 +36,8 @@
          url('../fonts/librefranklin-regular-webfont.woff') format('woff');
 }
 
-/*PAGE Rules*/
+
+/*HOME PAGE Rules*/
 /*Sets default font settings*/
 img, video{
 	max-width:100%;
@@ -93,7 +93,7 @@ a
 /* MOBILE STYLE RULES */
 #mainContainer{
     min-width:325px;
-	max-width:600px;
+	max-width:100%;
 	margin: 0 auto;
 	background-color: #FFF;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
@@ -104,8 +104,8 @@ a
     display:flex;
 	flex-direction:row;
 	position: fixed;
-	background-color: #FFF;
-    width:100%;
+    background-color: #FFF;
+    padding:5px;
 }
 
 /* POSITIONS LOGO */
@@ -124,8 +124,6 @@ a
     display:flex;
     flex-direction:row;
     opacity:0.7;
-    padding-top:10px;
-    margin:0 auto;
 }
 
 #headerNav a{
@@ -203,10 +201,6 @@ a
     background-color:black;
     margin-bottom:5px;
 }
-
-#contact{
-}
-
 #contactCopy{
     height:190px;
     background-color:grey;
@@ -298,4 +292,24 @@ a
     display:flex;
     justify-content: center;
     height:20px;
+}
+
+
+/* FEATURE PORTFOLIO PAGE RULES */
+#feature{
+    display:flex;
+    justify-content: center;
+    height:900px;
+}
+
+
+/* PORTFOLIO PAGE RULES */
+#portfolio{
+    margin-top:75px;
+}
+
+.threePortfolio{
+    background-color:blue;
+    height:250px;
+    margin-bottom:20px;
 }
