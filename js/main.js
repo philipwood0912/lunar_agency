@@ -13,7 +13,6 @@ import mike from './modules/objectM.js';
     var burgerCon = document.querySelector("#burgerCon"),
         menuBut = document.querySelector("#menuCon");
 
-
     function hamburgerMenu(){
         console.log("button clicked");
         burgerCon.classList.toggle("slideToggle");
