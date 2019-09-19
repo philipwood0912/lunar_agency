@@ -5,39 +5,124 @@
 	display: none;
 }
 
-body{
-    min-width:320px;
+/*Fontface settings*/
+@font-face {
+    font-family: 'libre_franklin-medium';
+    src: url('../fonts/librefranklin-medium-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-semibold';
+    src: url('../fonts/librefranklin-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-italic';
+    src: url('../fonts/librefranklin-italic-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-italic-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-bold';
+    src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'libre_franklin-regular';
+    src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+}
+
+/*HOME PAGE Rules*/
+/*Sets default font settings*/
+img, video{
+	max-width:100%;
+	max-height:100%;
+}
+
+body
+{
+	display:flex;
+	margin:0 auto;
+	font-family: 'libre_franklin-regular', Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	line-height: 20px;
+	background-color: #EFEFEF;
+}
+
+/*Styles all of the H2s*/
+h2
+{
+	max-width: 100%;
+	height: 25px;
+	background-color: #9bbd4f;
+	font-family: 'libre_franklin-semibold', Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding: 5px 0px 0px 10px;
+}
+
+/*Styles all of the H4s*/
+h4
+{
+	max-width: 100%;
+	height: 22px;
+	background-color: #d8ae58;
+	font-family: 'libre_franklin-semibold', Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 16px;
+	padding-top:3px;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+
+/*Styles all of the links dark green and medium font weight*/
+a
+{
+	font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+	color: #5d6f34;
+	text-decoration: none;
 }
 
 /* MOBILE STYLE RULES */
 #mainContainer{
-    min-width:320px;
-	max-width:600px;
+    min-width:325px;
+	max-width:100%;
 	margin: 0 auto;
-    background-color: grey;
+	background-color: #FFF;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-	display: relative;
 }
+
 
 #mainHeader{
     display:flex;
-    height:45px;
-    padding-top:5px;
-    padding-bottom:5px;
+	flex-direction:row;
+	position: fixed;
+    background-color: #FFF;
+    padding:5px;
 }
 
+/* POSITIONS LOGO */
+
+/* remove black colour replace with logo */
 #headerLogo{
-    height:45px;
-    width:45px;
-    margin-left:5px;
+    margin-top:5px;
+	margin-left:5px;
+	width: 50px;
+	height: 50px;
     background-color:black;
 }
 
+/* NEEDS WORK NEEDS WORK NEEDS WORK hangs off the right side of mobile boundries */
 #headerNav{
-    background:grey;
-    opacity:0.7;
     padding-top:10px;
     margin:0 auto;
+    width:100%;
 }
 
 #headerNav a{
@@ -55,46 +140,72 @@ body{
     margin-right:5px;
 }
 
+/* REMOVE and replace with video! */
 #mainVideo{
+    margin-top:70px;
+    width:100%;
     height:210px;
-    padding-bottom:15px;
+    margin-bottom:15px;
+    background-color:black;
 }
 
 #aboutUs{
-    padding-bottom:15px;
+    margin-bottom:15px;
 }
 
+/* REMOVE for staff photo and controls */
 #staffPhoto{
     height:210px;
-    padding-bottom:10px;
+    background-color:grey;
+    margin-bottom:5px;
 }
 
-#aboutUsCopy{
-    height:86px;
+/* REMOVE for responsive Bios */
+#staffBio{
+    height:60px;
+    background-color:grey;
+    opacity:0.5;
 }
 
+/* styles main portfolio area */
+
+/* REMOVE for Main Portfolio Piece */
 #promoProduct{
-    padding-bottom:5px
+    margin-bottom:10px;
 }
 
 #promoImg{
     height: 255px;
+    background-color:black;
+    margin-bottom:5px;
 }
 
 #promoDesc{
-    padding-bottom:15px;
+    height:60px;
+    margin-bottom:15px;
+    background-color:grey;
+    opacity:0.5;
 }
 
 #productCon{
     display:block;
 }
 
-.fourProducts{
+/* styles two addition portfilio pieces */
+
+/* REMOVE for photos */
+.twoProducts{
     height:190px;
+    background-color:black;
+    margin-bottom:5px;
 }
 
-#contact{
-    padding-bottom: 15px;
+#contactCopy{
+    height:190px;
+    background-color:grey;
+    opacity:0.5;
+    margin-bottom:15px;
+    margin-top:15px;
 }
 
 #contactForm
@@ -105,12 +216,14 @@ body{
 /*Styles the contact form labels*/
 #contactForm label
 {
-	font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-	font-size: 14px;
 	margin-top: 20px;
-	margin-left: 30px;
+    margin-left: 30px;
+    padding-bottom:3px;
     display: block;
-    color: orange;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+	color: orange;
+	text-decoration: none;
+	transition: all .15s linear;
 }
 
 #contactForm label:first-of-type
@@ -120,8 +233,7 @@ body{
 
 /*Styles the input fields*/
 #firstName, #lastName, #email, #message
-{
-	display: block;
+{	display: block;
 	margin-top: 5px;
 	margin: 0 auto;
 	width: 90%;
@@ -141,15 +253,14 @@ body{
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 20px;
-	margin-bottom:20px;
-}
-
-#contactCopy{
-    height:190px;
+    margin-bottom:20px;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+	color:black;
+	text-decoration: none;
 }
 
 #footer{
-    padding-bottom:10px;
+    margin-bottom:10px;
     margin:0 auto;
 }
 
@@ -158,18 +269,46 @@ body{
     color:orange;
 }
 
+/* REMOVE for social media icons as links */
 #socialMedia{
     height:40px;
+    background-color:black;
+    display:flex;
+    justify-content:center;
 }
 
 #backToTop{
-    display:block;
-    margin: 0 auto;
-    height: 30px;
+	display:flex;
+    justify-content: center;
+    margin-top:10px;
+	margin-bottom:10px;
 }
 
 #footerNav{display:none;}
 
+/* FILL with copyright text */
 #copyright{
+    display:flex;
+    justify-content: center;
     height:20px;
+}
+
+
+/* FEATURE PORTFOLIO PAGE RULES */
+#feature{
+    display:flex;
+    justify-content: center;
+    height:900px;
+}
+
+
+/* PORTFOLIO PAGE RULES */
+#portfolio{
+    margin-top:75px;
+}
+
+.threePortfolio{
+    background-color:blue;
+    height:250px;
+    margin-bottom:20px;
 }
