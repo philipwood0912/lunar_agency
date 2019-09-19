@@ -46,7 +46,7 @@ img, video{
 
 body
 {
-	margin:0 auto;
+	margin: 0 auto;
 	font-family: 'libre_franklin-regular', Helvetica, sans-serif;
 	font-size: 14px;
 	color: #666;
@@ -57,14 +57,11 @@ body
 /*Styles all of the H2s*/
 h2
 {
+    padding: 15px;
 	max-width: 100%;
-	height: 25px;
-	background-color: #9bbd4f;
 	font-family: 'libre_franklin-semibold', Helvetica, sans-serif;
 	color: #FFF;
-	font-size: 18px;
-	margin-bottom: 15px;
-	padding: 5px 0px 0px 10px;
+	font-size: 20px;
 }
 
 /*Styles all of the H4s*/
@@ -91,9 +88,9 @@ a
 
 /* MOBILE STYLE RULES */
 #mainContainer{
+    margin: 0 auto;
     min-width:325px;
 	max-width:100%;
-	margin: 0 auto;
 	background-color: #FFF;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
@@ -192,28 +189,137 @@ a
 
 #aboutUs{
     margin-bottom:15px;
+    
 }
 
 /* REMOVE for staff photo and controls */
 #staffPhoto{
-    height:210px;
-    background-color:grey;
-    margin-bottom:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 200px;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('../images/mobile/moonbg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
+#theTeam {
+    align-items: flex-end;
+}
+@media screen and (min-width: 445px) {
+    #staffPhoto {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #staffPhoto {
+        height: 300px;
+        max-width: 800px;
+        background-image: url('../images/tablet/moonbg-tablet.jpg');
+    }
+    #theTeam {
+        height: 80%;
+    }
+    #name {
+        font-size: 30px;
+    }
+    #role {
+        font-size: 25px;
+    }
+    #bioRole {
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #staffPhoto {
+        height: 450px;
+        max-width: 1000px;
+        background-image: url('../images/desktop/moonbg-desktop.jpg');
+        justify-content: flex-end;
+    }
+    .photos {
+        width: 100%;
+    }
+    #photoBy {
+        content: url('../images/tablet/brisk_tablet.png');
+    }
+    #photoPw {
+        content: url('../images/tablet/phil_tablet.png');
+    }
+    #photoMp {
+        content: url('../images/tablet/mike_tablet.png');
+    }
+    #photoSo {
+        content: url('../images/tablet/scott_tablet.png')
+    }
+    #bio {
+        padding: 0px 50px;
+    }
+}
+
+#theTeam {
+    display: flex;
+}
+
+#butHold {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 5px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #d8ae58;
+    border-radius: 10px;
+}
+
+#back img {
+    width: 50%;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+#next img {
+    width: 50%;
+    margin-top: 3px;
+    margin-left: 12px;
+}
+
+
 /* REMOVE for responsive Bios */
-#staffBio{
-    height:60px;
-    background-color:grey;
-    opacity:1;
+#bioRole {
+    background-color: #000000;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+#role {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#bio {
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
 }
 
 /* styles main portfolio area */
 
 /* REMOVE for Main Portfolio Piece */
-#promoProduct{
-    margin-bottom:10px;
-}
 
 #promoImg{
     height: 255px;
@@ -290,13 +396,14 @@ a
 .submit
 {
 	display: block;
-	width: 90%;
+	width: 100px;
 	margin: 0 auto;
 	margin-top: 20px;
     margin-bottom:20px;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
 	color:black;
 	text-decoration: none;
+    font-size: 25px;
 }
 
 #footer{
@@ -312,16 +419,40 @@ a
 /* REMOVE for social media icons as links */
 #socialMedia{
     height:40px;
-    background-color:black;
+    background-color:#fff;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #d8ae58;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.social img {
+    width: 70%;
+    padding: 5px;
+}
+
+.face img{
+    width: 80%;
+    padding: 10px 8px;
 }
 
 #backToTop{
 	display:flex;
     justify-content: center;
-    margin-top:10px;
-	margin-bottom:10px;
+    margin: 0 auto;
+    margin-top:30px;
+	margin-bottom:20px;
+    color: #000000;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid #d8ae58;
 }
 
 #footerNav{display:none;}
@@ -330,14 +461,25 @@ a
 #copyright{
     display:flex;
     justify-content: center;
-    height:20px;
+    height:50px;
 }
 
 
+/* FEATURE PORTFOLIO PAGE RULES */
+#feature{
+    display:flex;
+    justify-content: center;
+    height:900px;
+}
 
 
+/* PORTFOLIO PAGE RULES */
+#portfolio{
+    margin-top:75px;
+}
 
-
-#portfolioCon{
-    margin-top:300px;
+.threePortfolio{
+    background-color:blue;
+    height:250px;
+    margin-bottom:20px;
 }
