@@ -37,6 +37,25 @@
          url('../fonts/librefranklin-regular-webfont.woff') format('woff');
 }
 
+h2{
+    color: #d8ae58;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+h3{
+    color:#d8ae58;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    font-size:16px;
+}
+
+p{
+    color:white;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    font-size:14px;
+    line-height:30px;
+}
 
 /*HOME PAGE Rules*/
 /*Sets default font settings*/
@@ -54,29 +73,7 @@ body
 	background-color: #EFEFEF;
 }
 
-/*Styles all of the H2s*/
-h2
-{
-    padding: 15px;
-	max-width: 100%;
-	font-family: 'libre_franklin-semibold', Helvetica, sans-serif;
-	color: #FFF;
-	font-size: 20px;
-}
 
-/*Styles all of the H4s*/
-h4
-{
-	max-width: 100%;
-	height: 22px;
-	background-color: #d8ae58;
-	font-family: 'libre_franklin-semibold', Helvetica, sans-serif;
-	color: #FFF;
-	font-size: 16px;
-	padding-top:3px;
-	padding-left:10px;
-	margin-bottom:10px;
-}
 
 /*Styles all of the links dark green and medium font weight*/
 a
@@ -170,8 +167,6 @@ a
 #deskNav{display:none;}
 
 /* POSITIONS LOGO */
-
-/* remove black colour replace with logo */
 #logoMenuCon {
     display: flex;
     justify-content: space-around;
@@ -313,7 +308,14 @@ a
 	letter-spacing: 1px;
 }
 
-/* REMOVE for staff photo and controls */
+#teamTitle{
+    margin-bottom:60px;
+}
+
+#bioCon{
+    text-align:center;
+}
+
 #staffPhoto{
     display: flex;
     flex-direction: column;
@@ -350,22 +352,19 @@ a
 }
 
 .arrow {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 3px solid #d8ae58;
     border-radius: 10px;
+    padding-top:8px;
 }
 
 #back img {
-    width: 50%;
-    margin-top: 3px;
-    margin-left: 8px;
+    width: 40%;
 }
 
 #next img {
-    width: 50%;
-    margin-top: 3px;
-    margin-left: 12px;
+    width: 40%;
 }
 
 #next:active, #back:active {
@@ -378,8 +377,6 @@ a
     filter: grayscale(100%);
 }
 
-
-/* REMOVE for responsive Bios */
 #bioRole {
     background-color: #000000;
     max-width: 900px;
@@ -389,7 +386,7 @@ a
 
 #role {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -397,34 +394,21 @@ a
     color: #fff;
     padding: 20px 5px;
     text-align: center;
-    line-height: 25px;
+    line-height: 17px;
+    font-size:10px;
 }
 
 #promoProduct {
     margin: 0 auto;
     text-align: center;
+    margin-top:15px;
 }
 
 /* styles main portfolio area */
-
-/* REMOVE for Main Portfolio Piece */
-
 #promoImg {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom:5px;
 }
-
-#promoText{
-    color: #d8ae58;
-    font-size: 25px;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-    margin-top: 15px;
-}
-
-#portThree {
-    margin-top: 5px;
-}
-
 
 #promoDesc{
     margin-bottom:15px;
@@ -435,6 +419,7 @@ a
     display:block;
 }
 
+/* ALSO TOUCHES SEPERATE PORTFOLIO PAGE */
 #portOne, #portTwo, #portThree , #portFour, #portFive{
     width: 95%;
     border: 5px solid #000000;
@@ -447,38 +432,39 @@ a
 }
 /* styles two addition portfilio pieces */
 
-/* REMOVE for photos */
 .twoProducts{
     margin-bottom:5px;
 }
 
+#contact{
+    margin-top:15px;
+}
+
 #contactForm
 {
-	width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin: 0 auto;
+    width: 80%;
 }
 
 #contactCopy {
     text-align: center;
 }
 
-#contactText {
-    color: #d8ae58;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-
 /*Styles the contact form labels*/
 #contactForm label
 {
-	margin-top: 20px;
-    margin-left: 30px;
+	margin-top: 10px;
+    margin-left: 15px;
     padding-bottom:3px;
     display: block;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-	color: #d8ae58;;
+	color: #d8ae58;
 	text-decoration: none;
-	transition: all .15s linear;
+    transition: all .15s linear;
+    font-size:10px;
 }
 
 #contactForm label:first-of-type
@@ -492,27 +478,31 @@ a
 	margin-top: 5px;
 	margin: 0 auto;
 	width: 90%;
-	height: 20px;
+	height: 10px;
     font-size: 16px;
 }
 
 #message
 {
-	height: 150px;
+	height: 80px;
 }
 
 /*Styles and positions submit button*/
 .submit
 {
 	display: block;
-	width: 100px;
+	width: 80px;
 	margin: 0 auto;
-	margin-top: 20px;
-    margin-bottom:20px;
+	margin-top: 15px;
+    margin-bottom:10px;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
 	color:black;
 	text-decoration: none;
-    font-size: 25px;
+    font-size: 14px;
+}
+
+.submit :hover{
+    background-color:#d8ae58;
 }
 
 #footer{
@@ -529,11 +519,10 @@ a
 #socialMedia{
     margin: 0 auto;
     height:40px;
-    background-color:black;
     display:flex;
     justify-content:space-around;
     margin-top: 20px;
-    max-width: 300px;
+    width:300px;
 }
 
 .social {
@@ -545,7 +534,7 @@ a
 }
 
 .social img {
-    width: 70%;
+    width: 80%;
     padding: 5px;
 }
 
@@ -582,38 +571,47 @@ a
     color:white;
 }
 
+
+
+
+
+
+
 /*  */
 /*  */
 /* PORTFOLIO PAGE RULES */
 #portfolioCon{
-    margin-top:110px;
+    text-align:center;
+    justify-content:center;
+    margin: 0 auto;
+}
+
+.longPic{
+    width:90%;
+    margin-bottom:10px;
 }
 
 #promoText{
     display:flex;
     justify-content: center;
-}
-
-#portFive {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    padding-top:20px;
+    margin-top:80px;
 }
 
 .promoDesc{
     margin-top:15px;
+    margin-bottom:20px;
     text-align:center;
 }
 
-.promoDesc h3{
-    margin-top:5px;
-    margin-bottom:5px;
-    color:#d8ae58;
+.doublePic{
+    width:80%;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
-.doublePic{
-    margin-top:15px;
-}
+
+
 
 
 /* MEDIA QUERIES AND BREAK POINTS */
