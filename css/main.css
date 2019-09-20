@@ -42,14 +42,14 @@ html {
 }
 
 h2{
-    color: #d8ae58;
+    color: #d8b407;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
 h3{
-    color:#d8ae58;
+    color:#d8b407;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
     font-size:16px;
 }
@@ -130,7 +130,7 @@ a
     line-height: 35px;
     border-radius: 10px;
     padding: 10px;
-    border: 3px solid #d8ae58;
+    border: 3px solid #d8b407;
     transition: all 500ms ease;
 }
 
@@ -156,16 +156,16 @@ a
 }
 
 #hamburgerNav li a:hover {
-    color: #d8ae58;
+    color: #d8b407;
     -webkit-transition: color 0.2s;
 }
 
 #hamburgerNav li {
-    border-bottom: 1px solid #d8ae58;
+    border-bottom: 1px solid #d8b407;
 }
 
 #hamburgerNav li:first-child {
-    border-top: 1px solid #d8ae58;
+    border-top: 1px solid #d8b407;
 }
 
 /* hides desktop logo */
@@ -364,16 +364,17 @@ a
 }
 
 .arrow:hover {
-    background-color: #776035;
-    -webkit-transition: background 0.2s;
+    border: 3px solid white;
 }
 
 .arrow {
     width: 30px;
     height: 30px;
-    border: 3px solid #d8ae58;
+    border: 3px solid #d8b407;
     border-radius: 10px;
     padding-top:8px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 #back img {
@@ -458,7 +459,7 @@ a
 }
 
 #portOne:hover, #portTwo:hover, #portThree:hover, #portFour:hover, #portFive:hover {
-    border-color: #d8ae58;
+    border-color: #d8b407;
     -webkit-transition: border 0.3s;
 }
 /* styles two addition portfilio pieces */
@@ -492,7 +493,7 @@ a
     padding-bottom:3px;
     display: block;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-	color: #d8ae58;
+	color: #d8b407;
 	text-decoration: none;
     transition: all .15s linear;
     font-size:10px;
@@ -524,23 +525,23 @@ a
     text-transform: uppercase;
     background-color: #000000;
 	display: block;
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
 	margin: 0 auto;
 	margin-top: 15px;
     margin-bottom:10px;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-	color:#d8ae58;
+	color:white;
 	text-decoration: none;
     font-size: 14px;
-    border: 3px solid #d8ae58;
+    border: 3px solid #d8b407;
     border-radius: 10px;
     transition: 0.3s;
 }
 
 .submit:hover{
-    background-color:#776035;
-    
+    border: 3px solid white;
+    cursor: pointer;
 }
 
 #footer{
@@ -550,7 +551,7 @@ a
 
 #footer a{
     text-decoration:none;
-    color:#d8ae58;;
+    color:#d8b407;;
 }
 
 /* REMOVE for social media icons as links */
@@ -566,9 +567,14 @@ a
 .social {
     width: 40px;
     height: 40px;
-    border: 3px solid #d8ae58;
+    border: 3px solid #d8b407;
     border-radius: 10px;
     background-color: #000000;
+    transition: 0.3s;
+}
+
+.social:hover {
+    border: 3px solid white;
 }
 
 .social img {
@@ -587,13 +593,13 @@ a
     margin: 0 auto;
     margin-top:30px;
 	margin-bottom:20px;
-    color: #d8ae58;
+    color: #d8b407;
     width: 100px;
-    opacity:0.7;
+    transition: 0.3s;
 }
 
 #backToTop:hover{
-    opacity:1.0;
+    color: white;
 }
 
 #footerNav{display:none;}
@@ -840,20 +846,6 @@ a
     #message
     {
         height: 150px;
-    }
-
-    /*Styles and positions submit button*/
-    .submit
-    {
-        display: block;
-        width: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        margin-bottom:10px;
-        font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-        color:black;
-        text-decoration: none;
-        font-size: 16px;
     }
 
 

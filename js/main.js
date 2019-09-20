@@ -73,16 +73,6 @@ import mike from './modules/objectM.js';
         console.log(counter);
     });
 
-    arrows.forEach(arrow => {
-        var arrowPar = arrow.parentNode;
-        arrowPar.addEventListener("mouseover", function(e) {
-            arrowPar.style.background = "#fff";
-        });
-        arrowPar.addEventListener("mouseleave", function(e) {
-            arrowPar.style.background = "none";
-        });
-    });
-
     console.log(counter);
 
     // Video Control code
