@@ -182,12 +182,12 @@ a
 }
 
 /* REMOVE and replace with video! */
-#mainVideo{
-    margin-top:110px;
-    width:100%;
-    height:210px;
-    margin-bottom:15px;
-    background-color:black;
+#lunarVideo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 /* REMOVE for staff photo and controls */
@@ -502,6 +502,10 @@ a
 }
 
 @media screen and (min-width: 500px) {
+    #lunarVideo {
+        max-width: 800px;
+    }
+
     #staffPhoto {
         height: 300px;
         max-width: 800px;
@@ -526,6 +530,10 @@ a
 }
 
 @media screen and (min-width: 800px) {
+    #lunarVideo {
+        max-width: 1000px;
+    }
+
     #staffPhoto {
         height: 450px;
         max-width: 1000px;
