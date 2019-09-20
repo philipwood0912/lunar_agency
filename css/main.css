@@ -100,7 +100,7 @@ a
 #mainHeader{
 	position: fixed;
     background-color: #FFF;
-    height: 115px;
+    height: 120px;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -116,15 +116,12 @@ a
     transform: rotate(90deg);
 }
 
-#menuCon {
-    margin-top: 25px;
-}
-
 #menuCon img {
     width: 45px;
 }
 
 #menuCon {
+    margin-top: 25px;
     width: 25px;
     height: 25px;
     line-height: 35px;
@@ -158,6 +155,10 @@ a
     display: block;
     padding: 10px 0px 10px 0px;
     text-align: center;
+    color: #000000;
+}
+
+#hamburgerNav li a:hover {
     color: #d8ae58;
 }
 
@@ -244,8 +245,14 @@ a
     margin-left: 12px;
 }
 
+#next:active, #back:active {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+}
+
 .filter-bnw {
-    filter: grayscale();
+    filter: grayscale(100%);
 }
 
 
@@ -288,6 +295,7 @@ a
     color: #d8ae58;
     font-size: 25px;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    margin-top: 15px;
 }
 
 #portThree {
@@ -304,11 +312,15 @@ a
     display:block;
 }
 
-#portOne, #portTwo, #portThree , #portFour{
+#portOne, #portTwo, #portThree , #portFour, #portFive{
     width: 95%;
     border: 5px solid #000000;
     border-radius: 10px;
     max-width: 1000px;
+}
+
+#portOne:hover, #portTwo:hover, #portThree:hover, #portFour:hover, #portFive:hover {
+    border-color: #d8ae58;
 }
 /* styles two addition portfilio pieces */
 
@@ -452,10 +464,10 @@ a
     justify-content: center;
 }
 
-#portOne{
-    display:flex;
-    margin:0 auto;
-    justify-content:center;
+#portFive {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .promoDesc{
@@ -507,6 +519,10 @@ a
     #bioRole {
         padding: 0px 50px;
     }
+    ul li {
+        font-size: 20px;
+        padding: 5px 0px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -543,5 +559,9 @@ a
     #contactText {
         font-size: 40px;
         padding: 30px;
+    }
+    ul li {
+        font-size: 25px;
+        padding: 10px 0px;
     }
 }

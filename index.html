@@ -18,7 +18,7 @@
             <header id="mainHeader">
                 <div id="logoMenuCon">
                     <div id="logoCon">
-                        <img src="images/lunar_logo.svg" alt="lunarLogo">
+                        <a href="index.html"><img src="images/lunar_logo.svg" alt="lunarLogo"></a>
                     </div>
                     <div id="menuCon">
                         <img src="images/burger.svg" alt="burgerMenu">
@@ -29,7 +29,7 @@
                         <h2 class="hidden">Main Navigation</h2>
                         <div id="burgerCon">
                             <ul id="burgerMenu">
-                                <li> <a href="#">Home</a> </li>
+                                <li> <a href="index.html">Home</a> </li>
                                 <li> <a href="#staffPhoto">About Us</a> </li>
                                 <li> <a href="#promoProduct">Portfolio</a></li>
                                 <li> <a href="#contact">Contact</a> </li>
@@ -66,11 +66,11 @@
             <div id="butHold">
                 <div id="butCon">
                     <div class="arrow" id="back">
-                        <img src="images/back.svg" alt="back">
+                        <img class="arrowsvg" src="images/back.svg" alt="back">
                     </div>
                     <h2 id="name">YOUR NAME HERE</h2>
                     <div class="arrow" id="next">
-                        <img src="images/next.svg" alt="next">
+                        <img class="arrowsvg" src="images/next.svg" alt="next">
                     </div>
                 </div>
             </div>
@@ -82,10 +82,10 @@
             <!-- promoProduct section -->
             <div id="promoProduct">
                 <h2 class="hidden">Promotional Portfolio Piece</h2>
+                <h2 id="promoText">OUR WORK</h2>
                 <!-- main promo piece -->
-                <div id="promoImg">
-                        <h2 id="promoText">OUR WORK</h2>
-                    <img id="portOne" src="images/portfolio/full-header-ms.jpg" alt="portfolio piece">
+                <div class="twoProducts" id="promoImg">
+                    <a href="portfolioMain.html"><img id="portOne" src="images/portfolio/full-header-ms.jpg" alt="portfolio piece"></a>
                 </div>
                 <div id="promoDesc">
                     <!-- promo product description -->
@@ -96,13 +96,13 @@
             <div id="productCon">
                 <h2 class=hidden>4 Portfolio Pieces</h2>
                 <div class="twoProducts"> 
-                    <img id="portTwo" src="images/portfolio/full-header-ms.jpg" alt="merch">
+                    <a href="portfolioMain.html"><img id="portTwo" src="images/portfolio/full-header-ms.jpg" alt="merch"></a>
                     <!-- product img -->
                     <!-- product desc -->
                 </div>
 
                 <div class="twoProducts"> 
-                    <img id="portThree" src="images/portfolio/full-header-ms.jpg" alt="hero">
+                    <a href="portfolioMain.html"><img id="portThree" src="images/portfolio/full-header-ms.jpg" alt="hero"></a>
                     <!-- product img -->
                     <!-- product desc -->
                 </div>
@@ -159,6 +159,7 @@
                 <div id="copyright">copyright area</div>
             </div> <!-- end footer section -->
     </div>  <!-- end mainContainer -->
+    <script src="js/menu.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
