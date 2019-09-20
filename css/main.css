@@ -190,7 +190,7 @@ a
 /*Controls Styling*/
 
 .controls {
-	width: 450px;
+	max-width: 450px;
 	margin: 0 auto;
 	background-color: #111;
 	border-radius: 10px;
@@ -201,8 +201,14 @@ a
 	padding: 5px;
 }
 
+.controlsInner {
+    display: flex;
+	flex-direction: row;
+    margin: 0 auto;
+}
+
 .buttons {
-	margin-left: 35px;
+    margin-top: 5px;
 }
 
 .controls button {
@@ -221,8 +227,8 @@ a
 }
 
 .rewind, .fastForward {
-	width: 25px;
-	height: 30px;
+	width: 15px;
+	height: 20px;
 }
 
 .rewind {
@@ -234,8 +240,8 @@ a
 }
 
 .pause, .play {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 }
 
 .pause {
@@ -264,7 +270,7 @@ a
 .volume {
   -webkit-appearance: none;
   appearance: none;
-  width: 150px;
+  width: 80px;
   height: 3px;
   background: #999;
   opacity: 0.8; 
@@ -305,7 +311,8 @@ a
 {
 	color: white;
 	font-size: 1.05em;
-	letter-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top: -7px;
 }
 
 #teamTitle{
@@ -626,6 +633,28 @@ a
     }
     #contactText {
         font-size: 30px;
+    }
+}
+
+/* Adjusts video controls */
+@media screen and (min-width: 450px) {
+    .rewind, .fastForward {
+        width: 25px;
+        height: 30px;
+    }
+    
+    .pause, .play {
+        width: 30px;
+        height: 30px;
+    }
+
+    .volume {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .slider p {
+    margin-top: -3px;
     }
 }
 
