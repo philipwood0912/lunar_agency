@@ -12,14 +12,13 @@ import mike from './modules/objectM.js';
 
     var teamArr = [brisk, phil, mike, scott];
 
-    var burgerCon = document.querySelector("#burgerCon"),
-        menuBut = document.querySelector("#menuCon"),
-        arrowL = document.querySelector("#back"),
+    var arrowL = document.querySelector("#back"),
         arrowR = document.querySelector("#next"),
         photos = document.querySelectorAll(".photos"),
         nameText = document.querySelector("#name"),
         roleText = document.querySelector("#role"),
-        bioText = document.querySelector("#bio");
+        bioText = document.querySelector("#bio"),
+        arrows = document.querySelectorAll(".arrowsvg");
 
     var counter = 0;
 
@@ -27,12 +26,6 @@ import mike from './modules/objectM.js';
     nameText.textContent = brisk.name;
     roleText.textContent = brisk.role;
     bioText.textContent = brisk.bio;
-
-    function hamburgerMenu(){
-        console.log("button clicked");
-        burgerCon.classList.toggle("slideToggle");
-        menuBut.classList.toggle("expanded");
-    }
 
     function counterControl(x){
         counter += x;
@@ -71,7 +64,16 @@ import mike from './modules/objectM.js';
         console.log(counter);
     });
 
+    arrows.forEach(arrow => {
+        var arrowPar = arrow.parentNode;
+        arrowPar.addEventListener("mouseover", function(e) {
+            arrowPar.style.background = "#fff";
+        });
+        arrowPar.addEventListener("mouseleave", function(e) {
+            arrowPar.style.background = "none";
+        });
+    });
+
     console.log(counter);
 
-    menuBut.addEventListener("click", hamburgerMenu);
 })();
