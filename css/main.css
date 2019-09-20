@@ -60,7 +60,7 @@ p{
 /*HOME PAGE Rules*/
 /*Sets default font settings*/
 img, video{
-	max-width:100%;
+	max-width:920px;
 	max-height:100%;
 }
 
@@ -190,7 +190,7 @@ a
 /*Controls Styling*/
 
 .controls {
-	max-width: 450px;
+	width: 450px;
 	margin: 0 auto;
 	background-color: #111;
 	border-radius: 10px;
@@ -201,14 +201,8 @@ a
 	padding: 5px;
 }
 
-.controlsInner {
-    display: flex;
-	flex-direction: row;
-    margin: 0 auto;
-}
-
 .buttons {
-    margin-top: 5px;
+	margin-left: 35px;
 }
 
 .controls button {
@@ -227,8 +221,8 @@ a
 }
 
 .rewind, .fastForward {
-	width: 15px;
-	height: 20px;
+	width: 25px;
+	height: 30px;
 }
 
 .rewind {
@@ -240,8 +234,8 @@ a
 }
 
 .pause, .play {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 }
 
 .pause {
@@ -270,7 +264,7 @@ a
 .volume {
   -webkit-appearance: none;
   appearance: none;
-  width: 80px;
+  width: 150px;
   height: 3px;
   background: #999;
   opacity: 0.8; 
@@ -311,8 +305,7 @@ a
 {
 	color: white;
 	font-size: 1.05em;
-    letter-spacing: 1px;
-    margin-top: -7px;
+	letter-spacing: 1px;
 }
 
 #teamTitle{
@@ -418,7 +411,20 @@ a
 }
 
 #promoDesc{
-    margin-bottom:15px;
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+    margin-top:5px;
+}
+
+#promoDesc h3{
+    margin-bottom:10px;
+}
+
+.smallTxt{
+    margin:0 auto;
+    max-width:930px;
+    padding:10px;
 }
 
 #productCon{
@@ -438,9 +444,8 @@ a
     border-color: #d8ae58;
 }
 /* styles two addition portfilio pieces */
-
 .twoProducts{
-    margin-bottom:5px;
+    margin:0 auto;
 }
 
 #contact{
@@ -594,7 +599,6 @@ a
 }
 
 .longPic{
-    width:90%;
     margin-bottom:10px;
 }
 
@@ -612,7 +616,7 @@ a
 }
 
 .doublePic{
-    width:80%;
+    width:50%;
     margin-top:10px;
     margin-bottom:10px;
 }
@@ -633,28 +637,6 @@ a
     }
     #contactText {
         font-size: 30px;
-    }
-}
-
-/* Adjusts video controls */
-@media screen and (min-width: 450px) {
-    .rewind, .fastForward {
-        width: 25px;
-        height: 30px;
-    }
-    
-    .pause, .play {
-        width: 30px;
-        height: 30px;
-    }
-
-    .volume {
-        width: 150px;
-        margin-top: 10px;
-    }
-
-    .slider p {
-    margin-top: -3px;
     }
 }
 
@@ -687,6 +669,53 @@ a
 }
 
 @media screen and (min-width: 800px) {
+
+    h2{
+        font-size:40px;
+        margin-bottom:25px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+    #mainHeader{
+        height:110px;
+    }
+
+    #logoCon img{
+        height:100px;
+        width:100px;
+    }
+    
+    /* switches from burger nav to regular nav */
+    #menuCon{display:none;}
+
+   #deskMenu{
+    display:flex;
+    }
+
+   #deskNav{
+       display:flex;
+       margin-top:30px;
+       margin-right:
+   }
+
+   #deskNav ul li{
+       margin-top:15px;
+   }
+
+   #deskNav ul li a{
+       margin-left:25px;
+       font-size:24px;
+       color:black;
+       opacity:0.6;
+   }
+
+   #deskNav a:hover{
+        opacity:1.0;
+   }
+
     #lunarVideo {
         max-width: 1000px;
     }
@@ -729,4 +758,97 @@ a
         font-size: 25px;
         padding: 10px 0px;
     }
+
+
+    #contact{
+        margin-top:25px;
+    }
+    
+    #contactForm
+    {
+        max-width:920px;
+
+    }
+    
+    #contactCopy {
+        text-align: center;
+    }
+    
+    /*Styles the contact form labels*/
+    #contactForm label
+    {
+        font-size:16px;
+        margin-left:40px;
+    }
+    
+    #contactForm label:first-of-type
+    {
+        margin-top: 0;
+    }
+    
+    /*Styles the input fields*/
+    #firstName, #lastName, #email, #message
+    {	display: block;
+        margin-top: 5px;
+        margin: 0 auto;
+        width: 90%;
+        height: 25px;
+        font-size: 16px;
+    }
+    
+    #message
+    {
+        height: 150px;
+    }
+    
+    /*Styles and positions submit button*/
+    .submit
+    {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom:10px;
+        font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+        color:black;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+
+    /*  */
+    /*  */
+    /* PORTFOLIO PAGE RULES */
+    #portfolioCon{
+        text-align:center;
+        justify-content:center;
+        margin: 0 auto;
+        margin-top:110px;
+    }
+
+    #promoText{
+        display:flex;
+        justify-content: center;
+        padding-bottom:0;
+    }
+
+    .promoDesc{
+        margin-top:30px;
+        text-align:center;
+    }
+
+    .longPic{
+        margin-bottom:30px;
+    }
+
+    .doublePic{
+        display:flex;
+        max-width:40%;
+        margin: 0 auto;
+        margin-bottom:30px;
+    }
+
+
+
+    
 }
