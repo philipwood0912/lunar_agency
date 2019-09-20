@@ -10,7 +10,7 @@
 All that is needed to run this project is a web browser. Google Chrome is recommended.
 
 ### How to Run
-Clone the project, navigate to the directory - <code>cd directoryname</code> - and open the index.html file in your web browser.
+Clone the project, navigate to the directory - <code>cd directoryname</code> - and open the index.html file in your web browser with a server.
 
 ### Purpose
 This project is to be completed for the Bootcamp project assigned in MMED-3038 Electronic Image Production and MMED-3039 Multimedia Authoring 3.
@@ -34,6 +34,7 @@ __Due Date:__ September 20, 2019 at 11:59 PM
 * Adobe Premiere
 * Adobe After Effects
 * Visual Studio Code
+* Audacity
 * Github / Git Bash
 * Google Chrome
 * SASS
