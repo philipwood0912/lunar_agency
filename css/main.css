@@ -90,7 +90,7 @@ a
 #mainContainer{
     margin: 0 auto;
     min-width:325px;
-	max-width:920px;
+	max-width:100%;
 	background-color: black;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
@@ -100,7 +100,7 @@ a
 	position: fixed;
     background-color: #FFF;
     width: 100%;
-    max-width:920px;
+    max-width:100%;
     top: 0;
     z-index: 1;
 }
@@ -177,13 +177,18 @@ a
     justify-content: space-around;
 }
 
-/* REMOVE and replace with video! */
+/* Sizes and positions video */
 #lunarVideo {
     display: block;
     margin: 0 auto;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 50px;
+}
+
+/* Adds space to top of video */
+#mainVideo {
+    padding-top: 40px;
 }
 
 /* REMOVE for staff photo and controls */
