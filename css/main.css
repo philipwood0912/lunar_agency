@@ -5,6 +5,10 @@
 	display: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*Fontface settings*/
 
 @font-face {
@@ -153,6 +157,7 @@ a
 
 #hamburgerNav li a:hover {
     color: #d8ae58;
+    -webkit-transition: color 0.2s;
 }
 
 #hamburgerNav li {
@@ -358,6 +363,11 @@ a
     width: 80%;
 }
 
+.arrow:hover {
+    background-color: #776035;
+    -webkit-transition: background 0.2s;
+}
+
 .arrow {
     width: 30px;
     height: 30px;
@@ -449,6 +459,7 @@ a
 
 #portOne:hover, #portTwo:hover, #portThree:hover, #portFour:hover, #portFive:hover {
     border-color: #d8ae58;
+    -webkit-transition: border 0.3s;
 }
 /* styles two addition portfilio pieces */
 
@@ -510,19 +521,26 @@ a
 /*Styles and positions submit button*/
 .submit
 {
+    text-transform: uppercase;
+    background-color: #000000;
 	display: block;
-	width: 80px;
+    width: 80px;
+    height: 30px;
 	margin: 0 auto;
 	margin-top: 15px;
     margin-bottom:10px;
     font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-	color:black;
+	color:#d8ae58;
 	text-decoration: none;
     font-size: 14px;
+    border: 3px solid #d8ae58;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.submit :hover{
-    background-color:#d8ae58;
+.submit:hover{
+    background-color:#776035;
+    
 }
 
 #footer{
