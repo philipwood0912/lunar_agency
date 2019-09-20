@@ -298,7 +298,7 @@ a
     display:block;
 }
 
-#portOne, #portTwo, #portThree {
+#portOne, #portTwo, #portThree , #portFour{
     width: 95%;
     border: 5px solid #000000;
     border-radius: 10px;
@@ -434,26 +434,43 @@ a
     height:50px;
 }
 
+/*  */
+/*  */
+/* PORTFOLIO PAGE RULES */
+#portfolioCon{
+    margin-top:110px;
+}
 
-/* FEATURE PORTFOLIO PAGE RULES */
-#feature{
+#promoText{
     display:flex;
     justify-content: center;
-    height:900px;
+}
+
+#portOne{
+    display:flex;
+    margin:0 auto;
+    justify-content:center;
+}
+
+.promoDesc{
+    margin-top:15px;
+    text-align:center;
+}
+
+.promoDesc h3{
+    margin-top:5px;
+    margin-bottom:5px;
+    color:#d8ae58;
+}
+
+.doublePic{
+    margin-top:15px;
 }
 
 
-/* PORTFOLIO PAGE RULES */
-#portfolio{
-    margin-top:75px;
-}
-
-.threePortfolio{
-    background-color:blue;
-    height:250px;
-    margin-bottom:20px;
-}
-
+/* MEDIA QUERIES AND BREAK POINTS */
+/* SMALLEST TO LARGEST PLZ */
+/*  */
 @media screen and (min-width: 445px) {
     #staffPhoto {
         height: 230px;
