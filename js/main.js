@@ -10,6 +10,15 @@ import mike from './modules/objectM.js';
     console.log(brisk);
     console.log(mike);
 
+    // Video control constants
+    const   video				= document.querySelector('video'),
+			playButton 			= document.querySelector('.play'),
+			pauseButton 		= document.querySelector('.pause'),
+			rewindButton		= document.querySelector('.rewind'),
+			fastForwardButton 	= document.querySelector('.fastForward'),
+			volume 				= document.querySelector('.volume'),
+			volumeSet			= document.querySelector('.volumeSet');
+
     var teamArr = [brisk, phil, mike, scott];
 
     var arrowL = document.querySelector("#back"),
@@ -75,5 +84,58 @@ import mike from './modules/objectM.js';
     });
 
     console.log(counter);
+
+    // Video Control code
+
+    // Toggles whether the play or pause button is showing
+	function toggleShow() {
+		playButton.classList.toggle('show');
+		pauseButton.classList.toggle('show');
+    }
+
+    // Plays video and changes play button to pause button
+	function playVideo() {
+		if (playButton.classList.contains('show')) {
+			toggleShow();
+		}
+		video.play();
+	}
+
+	// Pauses video and changes pause button to play button
+	function pauseVideo() {
+		toggleShow();
+		video.pause();
+	}
+
+	// Jumps to beginning of the video
+	function rewindVideo() {
+		video.currentTime = 0;
+	}
+
+	// Jumps to end of the video
+	function fastForwardVideo() {
+		video.currentTime = video.duration;
+	}
+
+	// Changes and displays volume
+	function changeVolume(value) {
+		video.volume = value * 0.01;
+		volumeSet.textContent = `Volume: ${value}`;
+    }
+    
+    // Change the volume of the video
+	changeVolume(volume.value);
+	volume.addEventListener("input", function(){ changeVolume(volume.value) });
+
+	// Go to beginning or end of video
+	rewindButton.addEventListener("click", rewindVideo);
+	fastForwardButton.addEventListener("click", fastForwardVideo);
+
+	// Pause / play the video
+	pauseButton.addEventListener("click", pauseVideo);
+    playButton.addEventListener("click", playVideo);
+    
+    // Listen for end of video to change back to play button
+	video.addEventListener("ended", toggleShow);
 
 })();

@@ -183,12 +183,134 @@ a
     margin: 0 auto;
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 /* Adds space to top of video */
 #mainVideo {
     padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*Controls Styling*/
+
+.controls {
+	width: 450px;
+	margin: 0 auto;
+	background-color: #111;
+	border-radius: 10px;
+	border: thin solid #666666;
+	display: flex;
+	flex-direction: row;
+	opacity: 0.9;
+	padding: 5px;
+}
+
+.buttons {
+	margin-left: 35px;
+}
+
+.controls button {
+	background-color: none;
+	border: none;
+	margin: 5px;
+	opacity: 0.8;
+	-moz-transition: 0.25s;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+
+.controls button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.rewind, .fastForward {
+	width: 25px;
+	height: 30px;
+}
+
+.rewind {
+	background: url(../images/rewind_button.svg) center no-repeat;
+}
+
+.fastForward {
+	background: url(../images/fast_forward_button.svg) center no-repeat;
+}
+
+.pause, .play {
+	width: 30px;
+	height: 30px;
+}
+
+.pause {
+	background: url(../images/pause_button.svg) center no-repeat;
+	display: none;
+}
+
+.play {
+	background: url(../images/play_button.svg) center no-repeat;
+	display: none;
+}
+
+.play.show, .pause.show {
+	display: inline;
+}
+
+.slider{
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	margin-top: 7px;
+	margin-left: 15px;
+}
+
+/*Styles volume slider*/
+.volume {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 150px;
+  height: 3px;
+  background: #999;
+  opacity: 0.8; 
+  -moz-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: opacity 0.25s;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+/*Increases volume slider opacity on hover*/
+.volume:hover {
+  opacity: 1;
+}
+
+/*Changes look of volume handle*/
+.volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #FFF;
+  cursor: pointer;
+}
+
+/*Changes look of volume handle*/
+.volume::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FFF;
+  cursor: pointer;
+}
+
+/*Styles volume text*/
+.slider p
+{
+	color: white;
+	font-size: 1.05em;
+	letter-spacing: 1px;
 }
 
 /* REMOVE for staff photo and controls */
