@@ -1,5 +1,5 @@
 export default {
-    name: "Mike",
+    name: "Mike Prior",
     role: "Front-End Development",
     bio: "blank"
 }

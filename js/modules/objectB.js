@@ -1,5 +1,5 @@
 export default {
-    name: "Brisk",
-    role: "Designer",
+    name: "Brisk Yunus",
+    role: "Design",
     bio: "blank"
 }

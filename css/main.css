@@ -103,6 +103,7 @@ a
     height: 115px;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 #logoCon {
@@ -188,11 +189,6 @@ a
     background-color:black;
 }
 
-#aboutUs{
-    margin-bottom:15px;
-    
-}
-
 /* REMOVE for staff photo and controls */
 #staffPhoto{
     display: flex;
@@ -216,11 +212,17 @@ a
 
 #butHold {
     display: flex;
-    justify-content: space-around;
     background-color: #000000;
     padding: 5px 0px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+#butCon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 
 .arrow {
@@ -240,6 +242,10 @@ a
     width: 50%;
     margin-top: 3px;
     margin-left: 12px;
+}
+
+.filter-bnw {
+    filter: grayscale();
 }
 
 
