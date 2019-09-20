@@ -52,8 +52,22 @@
             <div id="mainVideo">
                 <h2 class="hidden">About Us Video</h2>
                 <!-- video -->
-                <video id="lunarVideo" src="video/lunar_media_video.mp4" poster="images/video_thumbnail.jpg" controls loop></video>
-                <!-- controls -->
+                <video id="lunarVideo" src="video/lunar_media_video.mp4" poster="images/video_thumbnail.jpg"></video>
+                
+                <!-- Video Controls -->
+                <div class="controls">
+                    <div class="buttons">
+                        <button class="rewind"></button>
+                        <button class="pause"></button>
+                        <button class="play show"></button>
+                        <button class="fastForward"></button>
+                    </div> <!-- End buttons -->
+
+                    <div class="slider">
+                        <input class="volume" type="range" min="0" max="100" value="0">
+                        <p class="volumeSet"></p>
+                    </div> <!-- End slider -->
+                </div> <!-- End controls -->
             </div> <!-- end mainVideo  -->
 
             <div id="staffPhoto">
