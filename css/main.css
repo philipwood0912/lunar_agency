@@ -6,6 +6,7 @@
 }
 
 /*Fontface settings*/
+
 @font-face {
     font-family: 'libre_franklin-medium';
     src: url('../fonts/librefranklin-medium-webfont.woff2') format('woff2'),
@@ -209,63 +210,8 @@ a
 }
 
 #theTeam {
-    align-items: flex-end;
-}
-@media screen and (min-width: 445px) {
-    #staffPhoto {
-        height: 230px;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    #staffPhoto {
-        height: 300px;
-        max-width: 800px;
-        background-image: url('../images/tablet/moonbg-tablet.jpg');
-    }
-    #theTeam {
-        height: 80%;
-    }
-    #name {
-        font-size: 30px;
-    }
-    #role {
-        font-size: 25px;
-    }
-    #bioRole {
-        padding: 0px 50px;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    #staffPhoto {
-        height: 450px;
-        max-width: 1000px;
-        background-image: url('../images/desktop/moonbg-desktop.jpg');
-        justify-content: flex-end;
-    }
-    .photos {
-        width: 100%;
-    }
-    #photoBy {
-        content: url('../images/tablet/brisk_tablet.png');
-    }
-    #photoPw {
-        content: url('../images/tablet/phil_tablet.png');
-    }
-    #photoMp {
-        content: url('../images/tablet/mike_tablet.png');
-    }
-    #photoSo {
-        content: url('../images/tablet/scott_tablet.png')
-    }
-    #bio {
-        padding: 0px 50px;
-    }
-}
-
-#theTeam {
     display: flex;
+    align-items: flex-end;
 }
 
 #butHold {
@@ -300,9 +246,9 @@ a
 /* REMOVE for responsive Bios */
 #bioRole {
     background-color: #000000;
-    max-width: 940px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0px 30px;
+    padding: 0px 10px;
 }
 
 #role {
@@ -313,7 +259,13 @@ a
 
 #bio {
     color: #fff;
-    padding: 10px 15px;
+    padding: 20px 5px;
+    text-align: center;
+    line-height: 25px;
+}
+
+#promoProduct {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -321,42 +273,58 @@ a
 
 /* REMOVE for Main Portfolio Piece */
 
-#promoImg{
-    height: 255px;
-    background-color:black;
+#promoImg {
+    margin-top: 15px;
     margin-bottom:5px;
 }
 
+#promoText{
+    color: #d8ae58;
+    font-size: 25px;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+}
+
+#portThree {
+    margin-top: 5px;
+}
+
+
 #promoDesc{
-    height:60px;
     margin-bottom:15px;
-    background-color:grey;
-    opacity:0.5;
 }
 
 #productCon{
+    text-align: center;
     display:block;
 }
 
+#portOne, #portTwo, #portThree {
+    width: 95%;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    max-width: 1000px;
+}
 /* styles two addition portfilio pieces */
 
 /* REMOVE for photos */
 .twoProducts{
-    height:190px;
-    background-color:black;
     margin-bottom:5px;
-}
-#contactCopy{
-    height:190px;
-    background-color:grey;
-    opacity:0.5;
-    margin-bottom:15px;
-    margin-top:15px;
 }
 
 #contactForm
 {
 	width: 100%;
+}
+
+#contactCopy {
+    text-align: center;
+}
+
+#contactText {
+    color: #d8ae58;
+    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 /*Styles the contact form labels*/
@@ -418,11 +386,13 @@ a
 
 /* REMOVE for social media icons as links */
 #socialMedia{
+    margin: 0 auto;
     height:40px;
     background-color:#fff;
     display:flex;
     justify-content:space-around;
     margin-top: 20px;
+    max-width: 400px;
 }
 
 .social {
@@ -482,4 +452,73 @@ a
     background-color:blue;
     height:250px;
     margin-bottom:20px;
+}
+
+@media screen and (min-width: 445px) {
+    #staffPhoto {
+        height: 230px;
+    }
+    #promoText {
+        font-size: 30px;
+    }
+    #contactText {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #staffPhoto {
+        height: 300px;
+        max-width: 800px;
+        background-image: url('../images/tablet/moonbg-tablet.jpg');
+    }
+    #theTeam {
+        height: 80%;
+    }
+    #name {
+        font-size: 30px;
+    }
+    #role {
+        font-size: 25px;
+    }
+    #bioRole {
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #staffPhoto {
+        height: 450px;
+        max-width: 1000px;
+        background-image: url('../images/desktop/moonbg-desktop.jpg');
+        justify-content: flex-end;
+    }
+    .photos {
+        width: 100%;
+    }
+    #photoBy {
+        content: url('../images/tablet/brisk_tablet.png');
+    }
+    #photoPw {
+        content: url('../images/tablet/phil_tablet.png');
+    }
+    #photoMp {
+        content: url('../images/tablet/mike_tablet.png');
+    }
+    #photoSo {
+        content: url('../images/tablet/scott_tablet.png')
+    }
+    #bio {
+        padding: 20px 50px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #promoText {
+        font-size: 40px;
+        padding: 30px;
+    }
+    #contactText {
+        font-size: 40px;
+        padding: 30px;
+    }
 }
