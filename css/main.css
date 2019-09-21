@@ -481,6 +481,8 @@ a
 
 #contact{
     margin-top:25px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #contactForm
@@ -489,7 +491,6 @@ a
     flex-direction:column;
     justify-content:center;
     margin: 0 auto;
-    width: 80%;
 }
 
 #contactCopy {
@@ -501,7 +502,6 @@ a
 {
 	margin-top: 20px;
     padding-bottom: 10px;
-    padding-left: 5px;
     display: block;
     font-family: Helvetica, sans-serif;
 	color: white;
@@ -520,7 +520,7 @@ a
 {	display: block;
 	margin-top: 5px;
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 	height: 10px;
     font-size: 16px;
 }
@@ -738,6 +738,10 @@ a
         margin-bottom:25px;
     }
 
+    #contact h2 {
+        line-height: 50px;
+    }
+
     h3{
         font-size:24px;
         line-height: 30px;
@@ -837,6 +841,8 @@ a
 
     #contact{
         margin-top:25px;
+        max-width: 920px;
+        margin: 0 auto;
     }
 
     #contactForm
@@ -853,7 +859,6 @@ a
     #contactForm label
     {
         font-size:16px;
-        margin-left:40px;
     }
 
     #contactForm label:first-of-type
@@ -866,7 +871,6 @@ a
     {	display: block;
         margin-top: 5px;
         margin: 0 auto;
-        width: 90%;
         height: 25px;
         font-size: 16px;
     }
