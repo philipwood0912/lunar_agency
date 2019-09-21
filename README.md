@@ -1,3 +1,5 @@
+![Lunar Media logo](images/lunar_logo.svg)
+
 # Bootcamp - Lunar Media
 
 ### Authors
