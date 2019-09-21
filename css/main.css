@@ -535,8 +535,6 @@ a
     text-transform: uppercase;
     background-color: #000000;
 	display: block;
-    width: 100px;
-    height: 40px;
 	margin: 0 auto;
 	margin-top: 15px;
     margin-bottom:10px;
@@ -575,8 +573,8 @@ a
 }
 
 .social {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border: 3px solid #d8b407;
     border-radius: 10px;
     background-color: #000000;
@@ -589,12 +587,13 @@ a
 
 .social img {
     width: 80%;
-    padding: 5px;
+    padding: 2px;
 }
 
 .face img{
     width: 90%;
-    padding: 10px 8px;
+    padding-left:6px;
+    padding-top:5px;
 }
 
 #backToTop{
