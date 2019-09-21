@@ -1,4 +1,4 @@
-![Lunar Media logo](images/lunar_logo.svg)
+![Lunar Media Logo](images/lunar_logo.svg)
 
 # Bootcamp - Lunar Media
 
