@@ -43,20 +43,24 @@ html {
 
 h2{
     color: #d8b407;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    font-family: 'Lucida Sans Typewriter', Helvetica, sans-serif;
     margin-bottom: 10px;
     font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5em;
 }
 
 h3{
     color:#d8b407;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    font-family: 'Lucida Sans Typewriter', Helvetica, sans-serif;
     font-size:16px;
+    text-transform: uppercase;
+    letter-spacing: .5em;
 }
 
 p{
     color:white;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size:14px;
     line-height:30px;
 }
@@ -71,7 +75,7 @@ img, video{
 body
 {
 	margin: 0 auto;
-	font-family: 'libre_franklin-regular', Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	background-color: #EFEFEF;
@@ -82,7 +86,7 @@ body
 /*Styles all of the links dark green and medium font weight*/
 a
 {
-	font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #5d6f34;
 	text-decoration: none;
 }
@@ -488,12 +492,12 @@ a
 /*Styles the contact form labels*/
 #contactForm label
 {
-	margin-top: 10px;
-    margin-left: 15px;
-    padding-bottom:3px;
+	margin-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
     display: block;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
-	color: #d8b407;
+    font-family: Helvetica, sans-serif;
+	color: white;
 	text-decoration: none;
     transition: all .15s linear;
     font-size:10px;
@@ -530,7 +534,7 @@ a
 	margin: 0 auto;
 	margin-top: 15px;
     margin-bottom:10px;
-    font-family: 'libre_franklin-medium', Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 	color:white;
 	text-decoration: none;
     font-size: 14px;
@@ -754,14 +758,16 @@ a
     }
 
     #deskNav ul li{
-       margin-top:15px;
+       margin-top:0px;
     }
 
     #deskNav ul li a{
-       margin-left:25px;
-       font-size:24px;
+       margin-left:40px;
+       font-size:18px;
        color:black;
        opacity:0.6;
+       transition: 0.3s;
+       text-transform: uppercase;
     }
 
     #deskNav a:hover{
