@@ -406,9 +406,12 @@ a
     padding: 0px 10px;
 }
 
+#name {
+    margin-top: 12px;
+}
+
 #role {
     text-align: center;
-    font-size: 15px;
     color: #fff;
 }
 
@@ -447,6 +450,7 @@ a
     margin:0 auto;
     max-width:930px;
     padding:10px;
+    margin-bottom: 10px;
 }
 
 #productCon{
@@ -473,7 +477,7 @@ a
 }
 
 #contact{
-    margin-top:15px;
+    margin-top:25px;
 }
 
 #contactForm
@@ -600,6 +604,7 @@ a
     color: #d8b407;
     width: 100px;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 #backToTop:hover{
@@ -711,12 +716,7 @@ a
     #theTeam {
         height: 80%;
     }
-    #name {
-        font-size: 30px;
-    }
-    #role {
-        font-size: 25px;
-    }
+
     #bioRole {
         padding: 0px 50px;
     }
@@ -734,6 +734,7 @@ a
 
     h3{
         font-size:24px;
+        line-height: 30px;
     }
 
     #mainHeader{
@@ -804,6 +805,16 @@ a
         font-size: 18px;
         line-height: 30px;
     }
+
+    #promoProduct h3, #productCon h3{
+        margin-top: 15px;
+    }
+
+    .smallTxt {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
     #promoText {
         font-size: 40px;
         padding: 30px;
