@@ -178,7 +178,10 @@ a
 /* POSITIONS LOGO */
 #logoMenuCon {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin:0 auto;
+    padding:5px;
+    max-width:920px;
 }
 
 /* Sizes and positions video */
@@ -657,9 +660,12 @@ a
 }
 
 .doublePic{
-    width:50%;
     margin-top:10px;
-    margin-bottom:10px;
+    margin-bottom:20px;
+}
+
+#leftPic{
+    margin-bottom:20px;
 }
 
 
@@ -745,9 +751,14 @@ a
         height:110px;
     }
 
+    #logoMenuCon{
+        padding-right:5px;
+    }
+
     #logoCon img{
         height:100px;
         width:100px;
+        margin-top:0;
     }
 
     /* switches from burger nav to regular nav */
@@ -896,10 +907,14 @@ a
     }
 
     .doublePic{
-        display:flex;
-        max-width:40%;
-        margin: 0 auto;
+        flex-direction:row;
+        justify-content:center;
         margin-bottom:30px;
+    }
+
+    #rightPic{
+        margin-left:50px;
+        margin-bottom:20px;
     }
     ul li {
         font-size: 25px;
